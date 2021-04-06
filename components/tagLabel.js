@@ -1,5 +1,5 @@
 const TagLabel = ({
-    backgroundColor = "black",
+    backgroundColor = "red",
     textColor = "white",
     children,
 }) => {

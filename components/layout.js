@@ -3,9 +3,9 @@ import Link from "next/link";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 
-const name = "Vinícius A dos Santos";
+const name = "Raquel Câmara";
 export const siteTitle =
-    "Vinícius A Santos - Software Engineer & Solutions Architect";
+    "Raquel Câmara - Data Scientist";
 
 const SocialLink = ({ url, img, imgAlt }) => (
     <a
@@ -69,12 +69,12 @@ export default function Layout({ children, home }) {
                     <SocialLink
                         img="/images/linkedin.svg"
                         imgAlt="LinkedIn"
-                        url="https://www.linkedin.com/in/vinicius-vas-ti/"
+                        url="https://www.linkedin.com/in/raquel-camara/"
                     />
                     <SocialLink
                         img="/images/github.svg"
                         imgAlt="GitHub"
-                        url="https://github.com/viniciusvasti/"
+                        url="https://github.com/quelcamara/"
                     />
                 </div>
             </header>
