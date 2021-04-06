@@ -22,7 +22,7 @@ export default function Post() {
             </Head>
             <section className={utilStyles.headingMd}>
                 <p>
-                    Hey, welcome! I'm <b>Vinicius</b>. I'm a{" "}
+                    Hey, welcome! I'm <b>Raquel</b>. I'm a{" "}
                     <b>Software Engineer</b> and <b>Solutions Architect</b> who
                     loves everything about Software craftsmanship, designing
                     solutions and, of course, coding.
