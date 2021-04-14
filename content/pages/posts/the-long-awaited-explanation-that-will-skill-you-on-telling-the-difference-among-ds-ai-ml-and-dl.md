@@ -76,7 +76,7 @@ Many types of learning were developed on later years. But for now, we just need 
 Only by explaining the machines how to recognize patterns, researchers created a way to make computers develop a sufficient intelligence to take back their own errors and use them to improve their responses. This is Machine Learning. It is a subfield of AI, since it is the tool used to achieve many of the artificial intelligence applications we can see today. 
 
 ### Deep Learning
-![Deep Learning Interation](../../../Images/03.png) 
+![Deep Learning Interation](../../../images/03.png) 
 ***image*** *by author*
 
 To be able to make the computer learning theory works with more complex kind of data, and to write the pipeline for the learning process as an algorithm that could interpret things like images or sounds, scientists did an awesome job recreating the human brain engine by simulating our neurons.
@@ -111,7 +111,7 @@ But who might be *you*?
 You could be anyone who need to solve a problem and who have a set of information, but still don't have a clue on how to use it. A data scientist will take her or his ability to work on big sets of data to manipulate, organize, and interpret them, and finally provide you with a clean image of what you need to turn your decision making process easier.
 
 ### Summary
-![Image](../../../Images/04.png)
+![Image](../../../images/04.png)
 ***image*** *by author*
 
 And to put all these information into one place, here is a final picture of the relationship among all these terminologies.
@@ -122,6 +122,7 @@ Digging a little bit deeper, we have DL that came as a complement to the ML algo
 
 Finally, DS is well-known as a filed of study that is able to take advantage of all of these tools, and combine them along with some mathematical, statistical, and analytical knowledge to extract valuable information for the most varied domains. 
 
-Here you can have some more valuable information:<br/>
-[Toward Data Science](https://towardsdatascience.com/understanding-the-difference-between-ai-ml-and-dl-cceb63252a6c)  (EN) <br/>
+---
+**Here you can have some more valuable information:** <br/>
+[Toward Data Science](https://towardsdatascience.com/understanding-the-difference-between-ai-ml-and-dl-cceb63252a6c)   (EN) <br/>
 [A História da Inteligência Artificial](https://www.youtube.com/watch?v=Lhu8bdmkMCM) (PT-BR)
