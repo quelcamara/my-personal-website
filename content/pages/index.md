@@ -3,8 +3,8 @@ title: Home
 has_more_link: true
 more_link_text: Keep reading
 seo:
-  title: Stackbit Fjord Theme
-  description: The preview of the Fjord theme
+  title: Raquel Câmara - Data Scientist
+  description: A Data Scientist Diary 
   extra:
     - name: og:type
       value: website
@@ -13,7 +13,7 @@ seo:
       value: Stackbit Fjord Theme
       keyName: property
     - name: og:description
-      value: The preview of the Fjord theme
+      value: A Data Scientist Diary 
       keyName: property
     - name: og:image
       value: images/home.jpg
@@ -24,7 +24,7 @@ seo:
     - name: twitter:title
       value: Stackbit Fjord Theme
     - name: twitter:description
-      value: The preview of the Fjord theme
+      value: A Data Scientist Diary 
     - name: twitter:image
       value: images/home.jpg
       relativeUrl: true

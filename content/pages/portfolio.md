@@ -5,7 +5,7 @@ subtitle: >-
 img_path: images/portfolio.jpg
 seo:
   title: Portfolio
-  description: A reference for suggested typographic treatment and styles for your content
+  description: My data science portfolio
   extra:
     - name: og:type
       value: website
@@ -14,7 +14,7 @@ seo:
       value: Portfolio
       keyName: property
     - name: og:description
-      value: A reference for suggested typographic treatment and styles for your content
+      value: My data science portfolio
       keyName: property
     - name: og:image
       value: images/portfolio.jpg
@@ -25,7 +25,7 @@ seo:
     - name: twitter:title
       value: Portfolio
     - name: twitter:description
-      value: A reference for suggested typographic treatment and styles for your content
+      value: My data science portfolio
     - name: twitter:image
       value: images/portfolio.jpg
       relativeUrl: true
