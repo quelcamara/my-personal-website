@@ -29,5 +29,5 @@ seo:
     - name: twitter:image
       value: images/portfolio.jpg
       relativeUrl: true
-layout: page
+layout: portfolio
 ---

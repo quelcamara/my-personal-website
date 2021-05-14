@@ -296,6 +296,55 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+  portfolio:
+    type: page
+    urlPath: /portfolio
+    label: Portfolio
+    layout: portfolio
+    file: portfolio.md
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page
+        required: true
+      - type: string
+        name: subtitle
+        label: Subtitle
+        description: The text shown just below the page title
+      - type: image
+        name: img_path
+        label: Background Image
+        description: >-
+          The background image of the left side. If no image added, the default
+          image specified in Header Configuration is displayed.
+      - type: string
+        name: form_id
+        label: Form ID
+        description: 'A unique identifier of the form, must not contain whitespace'
+        required: true
+      - type: string
+        name: form_action
+        label: Form Action
+        description: >-
+          The path of your custom "success" page, if you want to replace the
+          default success message
+      - type: list
+        name: form_fields
+        label: Form Fields
+        items:
+          type: model
+          models:
+            - form_field
+      - type: string
+        name: submit_label
+        label: Submit Button Label
+        required: true
+      - type: model
+        name: seo
+        models:
+          - stackbit_page_meta
   page:
     type: page
     label: Page

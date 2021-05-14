@@ -414,6 +414,7 @@ img {
 
 .post-thumbnail,
 .post-content,
+.portfolio-content,
 .block {
   img {
     border-radius: 3px;
@@ -434,6 +435,19 @@ img {
 
 /* Clearing floats */
 .post-content {
+  &:after {
+    clear: both;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+}
+
+/* Clearing floats */
+.portfolio-content {
   &:after {
     clear: both;
   }

@@ -1,4 +1,4 @@
-const _ = require('lodash');
+const matchesProperty = require('lodash/matchesProperty');
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -17,14 +17,15 @@ module.exports = {
                 liveUpdate: isDev,
                 flattenAssetUrls: true,
                 pages: [
-                    { path: '/{__metadata.urlPath}', predicate: _.matchesProperty('__metadata.modelName', 'home') },
-                    { path: '/{__metadata.urlPath}', predicate: _.matchesProperty('__metadata.modelName', 'contact') },
-                    { path: '/{__metadata.urlPath}', predicate: _.matchesProperty('__metadata.modelName', 'page') },
-                    { path: '/{__metadata.urlPath}', predicate: _.matchesProperty('__metadata.modelName', 'post') }
+                    { path: '/{__metadata.urlPath}', predicate: matchesProperty('__metadata.modelName', 'home') },
+                    { path: '/{__metadata.urlPath}', predicate: matchesProperty('__metadata.modelName', 'contact') },
+                    { path: '/{__metadata.urlPath}', predicate: matchesProperty('__metadata.modelName', 'page') },
+                    { path: '/{__metadata.urlPath}', predicate: matchesProperty('__metadata.modelName', 'post') },
+                    { path: '/{__metadata.urlPath}', predicate: matchesProperty('__metadata.modelName', 'portfolio') }
                 ],
                 commonProps: {
-                    pages: { predicate: _.matchesProperty('__metadata.modelType', 'page') },
-                    data: { single: true, predicate: _.matchesProperty('__metadata.id', 'sourcebit-source-filesystem:data') }
+                    pages: { predicate: matchesProperty('__metadata.modelType', 'page') },
+                    data: { single: true, predicate: matchesProperty('__metadata.id', 'sourcebit-source-filesystem:data') }
                 }
             }
         }

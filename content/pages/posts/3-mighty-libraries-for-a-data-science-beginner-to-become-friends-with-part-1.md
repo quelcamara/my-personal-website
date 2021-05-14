@@ -4,7 +4,7 @@ subtitle: >-
   I will tell you the secret for this friendship to work, and why you should stick with them forever.
 excerpt: >-
   It is very common to get confused about what we should learn at the very beginning of our studies. But no need to start yelling at a cat! I am sure that after these posts you will be gifted with plenty of working for the next few days. On this first section out of three posts, we'll discover the strength of Pandas.
-date: 2021-04-23
+date: 2021-05-13
 thumb_img_path: images/post-2/cover.jpg
 thumb_img_alt: migthy libraries
 content_img_path: images/post-2/cover.jpg
