@@ -66,7 +66,7 @@ The company, named Greener Houses, is in the market for 8 yrs with a business mo
 
 The main goal was to provide the company useful insights so they can better understand how the market behaves and also their own businesses. This way, they can see the hole picture for the businesses to come.
 
-Access the complete project code [here](../../../images/portfolio-1/Greener_Houses.html) in html version. Alternatively, if you rather download the jupyter notebook, go to the GitHub repository [here](https://github.com/quelcamara/ds-portfolio-insight-project-01).
+Access the complete project code [here](../../images/portfolio-1/Greener_Houses) in html version. Alternatively, if you rather download the jupyter notebook, go to the GitHub repository [here](https://github.com/quelcamara/ds-portfolio-insight-project-01).
 
 ### Overall description
 The project was divided into 6 sections, each one of them also divided into subtopics. This repository includes the .csv file and a directory where the plots were saved. You will see under the sections:
