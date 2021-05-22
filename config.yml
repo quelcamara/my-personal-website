@@ -17,6 +17,9 @@ params:
       - label: About
         url: /about
         style: link
+      - label: Notebooks
+        url: /notebooks
+        style: link
       - label: Portfolio
         url: /portfolio
         style: link

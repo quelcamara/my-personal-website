@@ -21,6 +21,7 @@ module.exports = {
                     { path: '/{__metadata.urlPath}', predicate: matchesProperty('__metadata.modelName', 'contact') },
                     { path: '/{__metadata.urlPath}', predicate: matchesProperty('__metadata.modelName', 'page') },
                     { path: '/{__metadata.urlPath}', predicate: matchesProperty('__metadata.modelName', 'post') },
+                    { path: '/{__metadata.urlPath}', predicate: matchesProperty('__metadata.modelName', 'notebooks') },
                     { path: '/{__metadata.urlPath}', predicate: matchesProperty('__metadata.modelName', 'portfolio') }
                 ],
                 commonProps: {

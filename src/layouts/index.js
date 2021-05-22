@@ -3,13 +3,15 @@ import home from './home';
 import page from './page';
 import post from './post';
 import portfolio from './portfolio';
+import notebooks from './notebooks';
 
 export {
     contact,
     home,
     page,
     post,
-    portfolio
+    portfolio,
+    notebooks
 };
 
 export default {
@@ -17,5 +19,6 @@ export default {
     home,
     page,
     post,
-    portfolio
+    portfolio,
+    notebooks
 };
