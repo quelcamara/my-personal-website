@@ -1,7 +1,7 @@
 ---
 title: Portfolio
 subtitle: >-
-  Topic under construction.
+  My data science portfolio
 img_path: images/portfolio.jpg
 seo:
   title: Portfolio
