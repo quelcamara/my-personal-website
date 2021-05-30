@@ -29,5 +29,5 @@ seo:
     - name: twitter:image
       value: images/notebooks.jpg
       relativeUrl: true
-layout: page
+layout: notebooks
 ---

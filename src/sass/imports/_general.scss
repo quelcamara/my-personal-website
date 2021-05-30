@@ -414,6 +414,7 @@ img {
 
 .post-thumbnail,
 .post-content,
+.notebook-content,
 .portfolio-content,
 .block {
   img {
@@ -435,6 +436,7 @@ img {
 
 /* Clearing floats */
 .post-content {
+  text-align: justify;
   &:after {
     clear: both;
   }
@@ -447,6 +449,7 @@ img {
 }
 
 /* Clearing floats */
+.notebook-content,
 .portfolio-content {
   &:after {
     clear: both;

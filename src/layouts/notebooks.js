@@ -1,35 +1,56 @@
 import React from 'react';
-import _ from 'lodash';
+import get from 'lodash/get';
+import size from 'lodash/size';
+import orderBy from 'lodash/orderBy';
+import map from 'lodash/map';
+import moment from 'moment-strftime';
 
-import {Layout} from '../components/index';
+import { Layout } from '../components/index';
 import Header from '../components/Header';
-import {htmlToReact, markdownify} from '../utils';
+import { getPages, Link, withPrefix } from '../utils';
 import Footer from '../components/Footer';
 
-export default class Page extends React.Component {
-    render() {
-        return (
-            <Layout {...this.props}>
-              <Header {...this.props} site={this.props} page={this.props.page} image={_.get(this.props, 'page.frontmatter.img_path', null)} />
-              <div id="content" className="site-content">
-                <main id="main" className="site-main inner">
-                  <article className="post page post-full">
-                    <header className="post-header">
-                      <h1 className="post-title">{_.get(this.props, 'page.frontmatter.title', null)}</h1>
-                    </header>
-                    {_.get(this.props, 'page.frontmatter.subtitle', null) && (
-                    <div className="post-subtitle">
-                      {htmlToReact(_.get(this.props, 'page.frontmatter.subtitle', null))}
-                    </div>
+const NotebookCard = ({ post }) =>
+  <Link className="notebook-thumbnail" href={withPrefix(get(post, '__metadata.urlPath', null))}>
+    <header className="notebook-header">
+      <h2 className="notebook-title"><Link href={withPrefix(get(post, '__metadata.urlPath', null))} rel="bookmark">{get(post, 'frontmatter.title', null)}</Link></h2>
+      <div className="notebook-meta">
+        Created on <time className="published"
+          dateTime={moment(get(post, 'frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}</time>
+      </div>
+      <div className="notebook-content">
+        <p>{get(post, 'frontmatter.excerpt', null)}</p>
+      </div>
+    </header>
+   </Link>
+
+const Notebook = (props) => {
+  let posts = getPages(props.pages, '/notebooks');
+  let posts_count = size(posts);
+  return (
+    <Layout {...props}>
+      <Header {...props} site={props} page={props.page} image={get(props, 'page.frontmatter.img_path', null)} />
+      <div id="content" className="site-content">
+        <main id="main" className="site-main inner">
+          <div className="notebook-feed">
+          {(posts_count > 0) && ((() => {
+              let posts_sorted = orderBy(posts, 'frontmatter.date', 'desc');
+              return (
+                map(posts_sorted, (post, post_idx) => (
+                  <article key={post_idx} className="notebook">
+                    {get(post, 'frontmatter.thumb_img_path', null) && (
+                      <NotebookCard post={post} />
                     )}
-                    <div className="post-content">
-                      {markdownify(_.get(this.props, 'page.markdown', null))}
-                    </div>
                   </article>
-                </main>
-                <Footer {...this.props} site={this.props} page={this.props.page} image={_.get(this.props, 'page.frontmatter.img_path', null)} />
-              </div>
-            </Layout>
-        );
-    }
+                ))
+              );
+            })())}
+          </div>
+        </main>
+        <Footer {...props} site={props} page={props.page} image={get(props, 'page.frontmatter.img_path', null)} />
+      </div>
+    </Layout>
+  );
 }
+
+export default Notebook;

@@ -1,0 +1,139 @@
+/**
+ * Posts and Pages
+ */
+.notebook {
+  width: 20em;
+}
+
+.notebook-header {
+  margin-bottom: 1.66667em;
+}
+
+.notebook-title {
+  margin-bottom: 0.33333rem;
+  
+  a {
+    border: 0;
+    color: inherit;
+
+    &:hover {
+      color: _palette(primary);
+    }
+  }
+}
+
+.notebook-meta {
+  color: _palette(meta);
+  font-size: 0.88889rem;
+}
+
+.notebook-thumbnail {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px -1px 5px #555;
+  border-top: 1px solid #946947;
+  transition: 0.08s;
+  display: inline-flex;
+  margin-bottom: 2.5em;
+
+  img {
+    width: 50%;
+  }
+}
+
+.notebook-thumbnail:before{
+    position: absolute;
+    content: '';
+    top: -5px;
+    left: 0;
+    height: 10px;
+    width: 99%;
+    background-size: 9px 12px;
+    background-image: -webkit-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+    background-image: -moz-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+    background-image: -ms-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+    background-image: -o-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+    background-image: radial-gradient(circle at 5% 40%, transparent 70%, #555 20%);
+}
+
+.notebook-thumbnail:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.notebook-subtitle {
+  color: _palette(secondary);
+  font-size: 1.33333rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+.read-more-link {
+  color: _palette(secondary);
+  display: inline-block;
+  font-size: 0.88889rem;
+  font-weight: bold;
+  padding: 0.3em 24px 0.3em 0;
+  position: relative;
+
+  .icon-arrow-right {
+    left: auto;
+    margin-left: 0;
+    margin-right: 2px;
+    right: 0;
+  }
+}
+
+.notebook-feed {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  a {
+    border-bottom: none;
+  }
+
+  .notebook-header {
+    margin-bottom: -12px;
+  }
+  .notebook-thumbnail {
+    margin-bottom: 0;
+    padding: 0.75rem;
+    margin-left: 10px;
+  }
+  
+  .notebook-title {
+    font-size: 1.4rem;
+  }
+  
+  .notebook-meta {
+    font-size: 14px;
+  }
+  
+  .notebook-content {
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .notebook {
+    margin-bottom: 1.3em;
+  }
+
+  .notebook-header {
+    margin-bottom: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .notebook-feed {
+    justify-content: center;
+  }
+  
+  .notebook {
+    margin-bottom: 1.7em;
+  }
+}
